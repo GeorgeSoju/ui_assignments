@@ -39,13 +39,13 @@ class _whatsappcontactState extends State<whatsappcontact> {
     return Scaffold(
         appBar: AppBar(leading: const Icon(Icons.arrow_back),
           backgroundColor:Colors.teal ,
-          title: Text('Select Contact'), actions: <Widget>[
+          title: const Text('Select Contact',style: TextStyle(fontWeight: FontWeight.bold),), actions: <Widget>[
             IconButton(
               icon: Icon(Icons.search),
               onPressed: () {},
             ),
             IconButton(
-              icon: Icon(Icons.settings),
+              icon: Icon(Icons.menu),
               onPressed: () {},
             ),
           ],

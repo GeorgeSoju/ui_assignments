@@ -39,7 +39,20 @@ class _contactState extends State<contact> {
     ];
     return Scaffold(
         appBar: AppBar(backgroundColor:Colors.black38 ,
-          title: Text('Contacts'),
+          title: Text('Contacts',style:TextStyle(fontWeight: FontWeight.bold),),actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.add),
+              onPressed: () {},
+            ),
+            IconButton(
+            icon: Icon(Icons.search),
+      onPressed: () {},
+    ),
+    IconButton(
+    icon: Icon(Icons.menu_outlined),
+    onPressed: () {},
+    ),
+    ],
         ),
         body: ListView(
           children: List.generate(

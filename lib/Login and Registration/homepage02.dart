@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class homepage extends StatelessWidget {
   const homepage({Key? key}) : super(key: key);
@@ -22,11 +23,15 @@ class homepage extends StatelessWidget {
                 height: 100,
                 width: 100,
               ),
-              const Padding(
+               Padding(
                 padding: EdgeInsets.all(8.0),
                 child: Text(
                   'Welcome Buddy!!',
-                  style: TextStyle(fontSize: 30, color: Colors.blue,),
+                  style:GoogleFonts.andika(
+                    textStyle: const TextStyle(color: Colors.white, letterSpacing: .5),
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                    fontStyle: FontStyle.italic, ),
                 ),
               )
             ],

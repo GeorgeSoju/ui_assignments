@@ -47,9 +47,9 @@ class _loginState extends State<login> {
                 height: 100,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 8, bottom: 10),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.only(top: 8, bottom: 10),
+              child: Text(
                 "Hello There!!",
                 style: TextStyle(
                     fontSize: 20,

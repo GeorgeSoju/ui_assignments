@@ -1,5 +1,5 @@
 import 'dart:async';
-
+import 'package:google_fonts/google_fonts.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_assignments/Login%20and%20Registration/loginpage%20with%20validation.dart';
@@ -26,7 +26,7 @@ class _splashscreenState extends State<splashscreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(const Duration(seconds: 3),(){
+    Timer(const Duration(seconds: 8),(){
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>login()));
     });
   }
@@ -48,9 +48,13 @@ class _splashscreenState extends State<splashscreen> {
                 height: 100,
                 width: 100,
               ),
-              const Text(
+               Text(
                 'Healthify Me',
-                style: TextStyle(fontSize: 20, color: Colors.cyan,),
+                style:GoogleFonts.andika(
+                  textStyle: const TextStyle(color: Colors.white, letterSpacing: .5),
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700,
+                  fontStyle: FontStyle.italic, ),
               )
             ],
           ),

@@ -23,15 +23,18 @@ class _whatsappchatState extends State<whatsappchat> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      appBar: AppBar(leading: const Icon(Icons.arrow_back),
+      appBar: AppBar(
         backgroundColor:Colors.teal ,
-        title: Text('Whatsapp'), actions: <Widget>[
+        title: const Text('WhatsApp',style: TextStyle(fontWeight: FontWeight.bold),), actions: <Widget>[IconButton(
+          icon: const Icon(Icons.camera_alt_outlined),
+          onPressed: () {},
+        ),
           IconButton(
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
             onPressed: () {},
           ),
           IconButton(
-            icon: Icon(Icons.settings),
+            icon: const Icon(Icons.menu),
             onPressed: () {},
           ),
         ],
@@ -85,9 +88,9 @@ class _whatsappchatState extends State<whatsappchat> {
               trailing: Text('12:02'),
               subtitle: Row(
                 children: const <Widget>[
-                  Icon(Icons.phone_missed, size: 16.0,color: Colors.red,),
+                  Icon(Icons.headphones, size: 16.0,color: Colors.grey,),
                   SizedBox(width: 5.0),
-                  Text('missed voice call'),
+                  Text('Audio'),
                 ],
               ),
             ),
