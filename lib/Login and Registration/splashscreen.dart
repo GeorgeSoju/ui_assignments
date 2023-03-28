@@ -4,9 +4,11 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_assignments/Login%20and%20Registration/loginpage%20with%20validation.dart';
 
+import 'WelcoomeScreen.dart';
+
 void main() {
   runApp(DevicePreview(
-    builder: (BuildContext context) =>const MaterialApp(
+    builder: (BuildContext context) => const MaterialApp(
       useInheritedMediaQuery: true,
       home: splashscreen(),
       debugShowCheckedModeBanner: false,
@@ -26,36 +28,40 @@ class _splashscreenState extends State<splashscreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(const Duration(seconds: 8),(){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>login()));
+    Timer(const Duration(seconds: 4), () {
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => welcomeScreen()));
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-            gradient: LinearGradient(
-                colors: [Colors.purple, Colors.pinkAccent, Colors.deepPurple],
-                begin: Alignment.centerLeft,
-                end: Alignment.topRight)),
+            image: DecorationImage(
+                image: AssetImage(
+                  'assets/Images/leaf.jpg',
+                ),
+                fit: BoxFit.fill)),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                'assets/Images/health.png',
-                height: 100,
-                width: 100,
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset(
+                  'assets/Images/Heart.png',
+                  height: 100,
+                  width: 100,
+                ),
               ),
-               Text(
-                'Healthify Me',
-                style:GoogleFonts.andika(
-                  textStyle: const TextStyle(color: Colors.white, letterSpacing: .5),
-                  fontSize: 20,
-                  fontWeight: FontWeight.w700,
-                  fontStyle: FontStyle.italic, ),
-              )
+              const Text('Aduttu!',
+                style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),),
+
             ],
           ),
         ),

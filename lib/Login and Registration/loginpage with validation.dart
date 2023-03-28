@@ -30,9 +30,6 @@ class _loginState extends State<login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('LOGIN / SIGN UP'),
-      ),
       body: SingleChildScrollView(
           child: Form(
         key: formkey,
@@ -40,7 +37,7 @@ class _loginState extends State<login> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 10, bottom: 8),
+              padding: const EdgeInsets.only(top: 50, bottom: 8),
               child: Image.asset(
                 'assets/Images/health.png',
                 width: 100,
@@ -71,7 +68,7 @@ class _loginState extends State<login> {
                 },
                 decoration: InputDecoration(
                     helperText: 'username must be an email',
-                    prefixIcon: Icon(Icons.account_box_sharp),
+                    prefixIcon: const Icon(Icons.account_box_sharp),
                     hintText: 'user name',
                     labelText: 'user name',
                     border: OutlineInputBorder(
