@@ -44,7 +44,7 @@ class profile extends StatelessWidget {
                 child: CircleAvatar(
                   radius: 60,
                   backgroundImage: AssetImage(
-                    'assets/Images/kamalhassan.png',
+                    'assets/Images/rajini.jpg',
                   ),
                 ),
               ),
@@ -65,9 +65,102 @@ class profile extends StatelessWidget {
                       onPressed: () {}),
                 ],
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 25.0),
-                child: Text('Soju',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
+              const Padding(
+                padding: EdgeInsets.only(top: 25.0),
+                child: Text('Soju',style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold),),
+              ),const Text('@georgesoju'),
+              const Padding(
+                padding: EdgeInsets.only(top: 29.0,bottom: 18),
+                child: Text('Mobile App Developer',style: TextStyle(fontSize: 20,fontWeight: FontWeight.normal,color: Colors.black),),
+              ),
+
+              Container(
+                height:  MediaQuery.of(context).size.height * .4,
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.vertical,
+                  child: Column(
+                    children:  [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container( decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.grey[300]),
+                          height: 50,width: 330,
+                          child: const ListTile(
+                            title: Text('Privacy',style: TextStyle(color: Colors.black)),
+                            leading: Icon(Icons.privacy_tip_outlined,color: Colors.black,),
+                            trailing: Icon(Icons.arrow_forward_ios,color: Colors.black,),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container( decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.grey[300]),
+                          height: 50,width: 330,
+                          child: const ListTile(
+                            title: Text('Purchse History',style: TextStyle(color: Colors.black)),
+                            leading: Icon(Icons.history,color: Colors.black,),
+                            trailing: Icon(Icons.arrow_forward_ios,color: Colors.black,),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.grey[300]),
+                          height:50,width: 330,
+                          child: const ListTile(
+                            title: Text('Help & Support',style: TextStyle(color: Colors.black)),
+                            leading: Icon(Icons.help_outline,color: Colors.black,),
+                            trailing: Icon(Icons.arrow_forward_ios,color: Colors.black,),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container( decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.grey[300]),
+                          height: 50,width: 330,
+                          child: const ListTile(
+                            title: Text('Settings',style: TextStyle(color: Colors.black)),
+                            leading: Icon(Icons.settings,color: Colors.black,),
+                            trailing: Icon(Icons.arrow_forward_ios,color: Colors.black,),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container( decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.grey[300]),
+                          height: 50,width: 330,
+                          child: const ListTile(
+                            title: Text('Invite a friend',style: TextStyle(color: Colors.black)),
+                            leading: Icon(Icons.add_reaction_outlined,color: Colors.black,),
+                            trailing: Icon(Icons.arrow_forward_ios,color: Colors.black,),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container( decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.grey[300]),
+                          height: 50,width: 330,
+                          child: const ListTile(
+                            title: Text('Share',style: TextStyle(color: Colors.black),),
+                            leading: Icon(Icons.share,color: Colors.black,),
+                            trailing: Icon(Icons.arrow_forward_ios,color: Colors.black,),
+                          ),
+                        ),
+                      ),Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container( decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.grey[300]),
+                          height: 50,width: 320,
+                          child: const ListTile(
+                            title: Text('Log out',style: TextStyle(color: Colors.black),),
+                            leading: Icon(Icons.logout,color: Colors.black,),
+                            trailing: Icon(Icons.arrow_forward_ios,color: Colors.black,),
+                          ),
+                        ),
+                      )
+
+                    ],
+                  ),
+                ),
               )
             ]),
       ),
