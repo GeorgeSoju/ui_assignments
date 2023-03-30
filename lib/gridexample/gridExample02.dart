@@ -44,7 +44,15 @@ class Grid01 extends StatelessWidget {
                 childCount: 12,
                     (context, index){
                   return Center(
-                    child: Container(height: 80,width: 135,decoration: BoxDecoration(color: colour[index],
+                    child: Container(height: 80,width: 135,decoration: BoxDecoration(boxShadow:  const [
+                      BoxShadow(
+                        color: Colors.grey,
+                        blurRadius: 10,
+                        spreadRadius: 5,
+                        offset: Offset(0, 0),
+
+                      ),
+                    ],color: colour[index],
                         borderRadius:BorderRadius.circular(20) ),
                       child: Padding(
                         padding: EdgeInsets.all(8.0),
