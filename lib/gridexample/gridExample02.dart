@@ -6,7 +6,6 @@ void main() {
   runApp(DevicePreview(
       builder: (BuildContext context) =>
           MaterialApp(
-            theme: ThemeData(primarySwatch: Colors.teal),
             useInheritedMediaQuery: true,
             home: Grid01(),
             debugShowCheckedModeBanner: false,
@@ -31,7 +30,8 @@ class Grid01 extends StatelessWidget {
               crossAxisCount: 2,
               childAspectRatio: 2,
               crossAxisSpacing: 20,
-              mainAxisSpacing: 20,),
+              mainAxisSpacing: 20,
+            ),
             childrenDelegate:
             // SliverChildListDelegate([
             //     Card(child: Center(child: Icon(Icons.headphones, size: 30,),),),
@@ -55,11 +55,11 @@ class Grid01 extends StatelessWidget {
                     ],color: colour[index],
                         borderRadius:BorderRadius.circular(20) ),
                       child: Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: ListTile(
                           leading: IconButton(icon: FaIcon(icon[index],), onPressed: () {},),
                           //  Icon(Icons.confirmation_num_sharp),
-                          title: Text('soju\ngeor'),
+                          title: const Text('soju\ngeor'),
                         ),
                       ),
                     ),

@@ -41,11 +41,11 @@ class _whatsappcontactState extends State<whatsappcontact> {
           backgroundColor:Colors.teal ,
           title: const Text('Select Contact',style: TextStyle(fontWeight: FontWeight.bold),), actions: <Widget>[
             IconButton(
-              icon: Icon(Icons.search),
+              icon: const Icon(Icons.search),
               onPressed: () {},
             ),
             IconButton(
-              icon: Icon(Icons.menu),
+              icon: const Icon(Icons.menu),
               onPressed: () {},
             ),
           ],
@@ -55,8 +55,8 @@ class _whatsappcontactState extends State<whatsappcontact> {
             5,
                 (index) => Card(
                 child: ListTile(
-                  title: Text(name[index],style: TextStyle(fontSize: 20)),
-                  subtitle: Text(" ${about[index]}",style: TextStyle(fontSize: 15)),
+                  title: Text(name[index],style: const TextStyle(fontSize: 20)),
+                  subtitle: Text(" ${about[index]}",style: const TextStyle(fontSize: 15)),
                   leading: CircleAvatar(backgroundImage: AssetImage(images[index])),
                 )),
           ),

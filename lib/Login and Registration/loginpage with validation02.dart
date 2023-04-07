@@ -1,4 +1,4 @@
-import 'package:device_preview/device_preview.dart';
+//import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 
 import 'Homepage03.dart';
@@ -79,7 +79,9 @@ class _login02State extends State<login02> {
                         decoration: InputDecoration(
                           helperText: 'Username must be a email',
                           hintText: 'Enter Your User name',
-                          prefixIcon: Icon(Icons.account_box_sharp),
+                          prefixIcon: const Icon(Icons.account_box_sharp),
+                          suffixIcon: const Icon(Icons.email),
+                          suffixIconColor: Colors.white,
                           prefixIconColor: Colors.pinkAccent,
                           hintStyle: const TextStyle(color: Colors.black),
                           fillColor: Colors.white,
@@ -141,8 +143,8 @@ class _login02State extends State<login02> {
                       child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.pinkAccent,
-                              maximumSize: Size(300, 50),
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
+                              fixedSize: Size(120, 40),
+                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
                           onPressed: () {
                             final valid = formkey.currentState!.validate();
                             if (valid) {

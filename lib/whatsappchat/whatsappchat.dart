@@ -58,8 +58,8 @@ class _whatsappchatState extends State<whatsappchat> {
           ,Card(
             child: ListTile(
               leading: const CircleAvatar(backgroundImage: AssetImage('assets/Images/fahad.jpg'),),
-              title: Text('Aby'),
-              trailing: Text('Yesterday'),
+              title: const Text('Aby'),
+              trailing: const Text('Yesterday'),
               subtitle: Row(
                 children: const <Widget>[
                   Icon(Icons.delete, size: 16.0,color: Colors.grey,),
@@ -70,9 +70,9 @@ class _whatsappchatState extends State<whatsappchat> {
             ),
           ),Card(
             child: ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage('assets/Images/nimisha-sajayan-1.jpg'),),
-              title: Text('Sree'),
-              trailing: Text('13:05'),
+              leading: const CircleAvatar(backgroundImage: AssetImage('assets/Images/nimisha-sajayan-1.jpg'),),
+              title: const Text('Sree'),
+              trailing: const Text('13:05'),
               subtitle: Row(
                 children: const <Widget>[
                   Icon(Icons.photo, size: 16.0,color: Colors.green,),
@@ -83,9 +83,9 @@ class _whatsappchatState extends State<whatsappchat> {
             ),
           ),Card(
             child: ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage('assets/Images/kamal.png'),),
-              title: Text('Nandu'),
-              trailing: Text('12:02'),
+              leading: const CircleAvatar(backgroundImage: AssetImage('assets/Images/kamal.png'),),
+              title: const Text('Nandu'),
+              trailing: const Text('12:02'),
               subtitle: Row(
                 children: const <Widget>[
                   Icon(Icons.headphones, size: 16.0,color: Colors.grey,),
@@ -96,9 +96,9 @@ class _whatsappchatState extends State<whatsappchat> {
             ),
           ),Card(
             child: ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage('assets/Images/health.png'),),
-              title: Text('Jithu'),
-              trailing: Text('Yesterday'),
+              leading: const CircleAvatar(backgroundImage: AssetImage('assets/Images/health.png'),),
+              title: const Text('Jithu'),
+              trailing: const Text('Yesterday'),
               subtitle: Row(
                 children: const <Widget>[
                   Icon(Icons.video_camera_back_outlined, size: 16.0,color: Colors.green,),

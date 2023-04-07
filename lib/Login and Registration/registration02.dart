@@ -1,4 +1,4 @@
-import 'package:device_preview/device_preview.dart';
+//import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:ui_assignments/Login%20and%20Registration/loginpage%20with%20validation02.dart';
 
@@ -188,20 +188,22 @@ class _registeration02State extends State<registeration02> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.pinkAccent,
-                              maximumSize: const Size(300, 50),
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10))),
-                          onPressed: () {
-                            final valid = formkey.currentState!.validate();
-                            if(valid) {
-                              Navigator.push(context,
-                                  MaterialPageRoute(
-                                      builder: (context) => login02()));
-                            } },
-                          child: const Text('Sign Up')),
+                      child: Center(
+                        child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.pinkAccent,
+                                fixedSize: const Size(120, 40),
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20))),
+                            onPressed: () {
+                              final valid = formkey.currentState!.validate();
+                              if(valid) {
+                                Navigator.push(context,
+                                    MaterialPageRoute(
+                                        builder: (context) => login02()));
+                              } },
+                            child: const Text('Sign Up')),
+                      ),
                     )
                   ],
                 ),

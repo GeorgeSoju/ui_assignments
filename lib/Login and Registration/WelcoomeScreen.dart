@@ -52,8 +52,8 @@ class _welcomeScreenState extends State<welcomeScreen> {
                     padding: const EdgeInsets.all(8.0),
                     child: ElevatedButton(style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.pinkAccent,
-                      maximumSize: Size(300, 50),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0))
+                      fixedSize: Size(120, 40),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0))
                     ),
                         onPressed: () {Navigator.push(context,
                             MaterialPageRoute(builder: (context) => login02()));}, child: Text('Login')),
@@ -62,8 +62,8 @@ class _welcomeScreenState extends State<welcomeScreen> {
                     padding: const EdgeInsets.all(8.0),
                     child: ElevatedButton(style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.pinkAccent,
-                      maximumSize: Size(300, 50),
-                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0))
+                      fixedSize: Size(120, 40),
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0))
                     ),
                         onPressed: () {Navigator.push(context,
                             MaterialPageRoute(builder: (context) => registeration02()));}, child: Text('Sign Up')),

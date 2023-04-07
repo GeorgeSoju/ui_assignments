@@ -90,7 +90,7 @@ class _HotelDetailsState extends State<HotelDetails> {
                       ),Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(decoration: BoxDecoration(color: Colors.grey,borderRadius: BorderRadius.circular(20)),
-                            child: Text('8.5/90 reviews',style: TextStyle(color: Colors.white,fontSize: 15),)),
+                            child: const Text('8.5/90 reviews',style: TextStyle(color: Colors.white,fontSize: 15),)),
                       )
                       // ListTile(
                       //   title: Text(
