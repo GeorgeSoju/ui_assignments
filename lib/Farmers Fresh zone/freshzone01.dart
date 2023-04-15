@@ -25,7 +25,8 @@ class _FarmerZoneState extends State<FarmerZone> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: CustomScrollView(scrollDirection: Axis.vertical,
+        body: CustomScrollView(
+          //scrollDirection: Axis.vertical,
           slivers: [
             SliverAppBar(
               floating: false,
@@ -257,11 +258,23 @@ class _FarmerZoneState extends State<FarmerZone> {
                 ),
               ),
               FarmersGrid(),
-              Container(
-                decoration: BoxDecoration(
-                    image: const DecorationImage(
-                        image: AssetImage('assets/Images/chocolate.jpg',),fit: BoxFit.contain),
-                    borderRadius: BorderRadius.circular(20)),
+              SliverToBoxAdapter(
+                child: ListView(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                          image: const DecorationImage(
+                              image: AssetImage('assets/Images/chocolate.jpg',),fit: BoxFit.contain),
+                          borderRadius: BorderRadius.circular(20)),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          image: const DecorationImage(
+                              image: AssetImage('assets/Images/chocolate.jpg',),fit: BoxFit.contain),
+                          borderRadius: BorderRadius.circular(20)),
+                    ),
+                  ],
+                ),
               )
             ]))
           ],
@@ -297,12 +310,18 @@ class FarmersGrid extends StatelessWidget {
     'assets/Images/juice.jpg',
     'assets/Images/Nut.jpg',
     'assets/Images/exotic-fruits-3-725x483.jpg',
-    'assets/Images/meat02.jpg'
+    'assets/Images/meat02.jpg',
+    'assets/Images/veggie.jpg',
+    'assets/Images/fruits_detailfeature.jpg',
+    'assets/Images/juice.jpg',
   ];
   List<String> names = [
     'VEGETABLES',
     'FRUITS',
     'FRESH DRINKS',
+    'NUTS',
+    'EXOTIC FRUITS',
+    'MEAT',
     'NUTS',
     'EXOTIC FRUITS',
     'MEAT'
@@ -311,6 +330,7 @@ class FarmersGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+        physics: NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
